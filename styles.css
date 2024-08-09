@@ -1,39 +1,39 @@
-body{
-    color:rgb(70, 67, 67);
-    font-family: "Garamond", sans-serif;
+body {
+  color: rgb(70, 67, 67);
+  font-family: "Garamond", sans-serif;
 }
 
 /** Methode de pseudo-element pour regler opacity d'une image de fond (aucune commande CSS propre) **/
-body::before{
-   content: "";
-   position: fixed;
-   top: 0px;
-   right: 0px;
-   bottom: 0px;
-   left: 0px;
-   height: 100%;
-   width: 100;
-   background-image: url(https://www.jotform.com/blog/wp-content/uploads/2020/05/How-to-start-a-food-delivery-business.png);
-   background-size: cover;
-   z-index: -1;
-   opacity: 0.8;
+body::before {
+  content: "";
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100;
+  background-image: url(background-img.png);
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.8;
 }
 
-h1{
+h1 {
   font-size: 3em;
 }
 
-p{
+p {
   font-size: 1.1em;
 }
 
-label{
+label {
   display: flex;
   margin-bottom: 0.5em;
   font-size: 1.1em;
 }
 
-.form-size{
+.form-size {
   width: 70%;
   padding: 0.3em 0;
   border: solid white;
@@ -42,11 +42,11 @@ label{
   font-size: inherit;
 }
 
-#title{
+#title {
   text-align: center;
 }
 
-#description{
+#description {
   font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   font-size: 1.1em;
@@ -55,12 +55,12 @@ label{
   padding-bottom: 10px;
 }
 
-.form-shaping{
+.form-shaping {
   display: block;
-  padding: 0.5em 50px;
-} 
+  padding: 0.5em 1em;
+}
 
-#survey-form{
+#survey-form {
   background-color: rgb(113, 209, 209, 0.8);
   border-radius: 5% 20%;
   margin: 0 auto;
@@ -70,8 +70,8 @@ label{
   padding: 1.4em
 }
 
-#comments{
-  width: 70% ;
+#comments {
+  width: 70%;
   height: 7em;
   padding: 0.3em 0;
   border: solid white;
@@ -80,7 +80,7 @@ label{
   font-size: inherit;
 }
 
-#submit{
+#submit {
   width: 30%;
   height: 2em;
   margin: 0 15em;
