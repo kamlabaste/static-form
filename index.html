@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form (FCC)</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <main>
+        <h1 id="title">Expenses On Food Delivery App Survey</h1>
+        <p id="description">Thank you for taking the time to answer this survey. This survey is simply about how much you will spend on delivery food using an app, a desktop or phone.</p>
+        
+        <form id="survey-form">
+
+          <div class="form-shaping">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" type="text" name="name" class="form-size" placeholder="Enter your name" required>
+          </div>
+          <div class="form-shaping">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" type="email" name="email" class="form-size" placeholder="Enter your email" required>
+          </div>
+          <div class="form-shaping">
+          <label id="number-label" for="number">Age
+          <span>(optional)</span></label>
+          <input id="number" type="number" name="age" class="form-size" min="0" max="99" placeholder="Age">
+          </div>
+
+          <div class="form-shaping">
+          <p>How much do you spend approximatively on food delivery in a day? (including delivery fee)</p>
+          <select id="dropdown" name="spending" class="form-size" required>
+            <option disabled selected value>Select a range</option>
+            <option value="less-than-20$">Less than 20$</option>
+            <option value="20$-30$">20$ to 30$</option>
+            <option value="30$-40$">30$ to 40$</option>
+            <option value="more-than-40$">More than 40$</option>
+          </select>
+          </div>
+
+          <div class="form-shaping">
+          <p>Which way do you more often use to order food ?</p>
+          <label>
+            <input type="radio" name="way-to-order-food" value="phone-call"> Phone Call
+          </label>
+          <label>
+            <input type="radio" name="way-to-order-food" value="phone-app"> Phone app (Uber eats, Skipthedishes, doordash, etc...)
+          </label>
+          <label>
+            <input type="radio" name="way-to-order-food" value="desktop-portable-computer"> Desktop or portable computer
+          </label>
+          </div>
+          
+          <div class="form-shaping">
+          <p>Which food delivery app are you using or did you heard about ?</p>
+          <label>
+            <input type="checkbox" value="uber-eats"> Uber eats
+          </label>
+          <label>
+            <input type="checkbox" value="skipthedishes"> Skipthedishes
+          </label>
+          <label>
+            <input type="checkbox" value="doordash"> Doordash
+          </label>
+          <label>
+            <input type="checkbox" value="foodora"> Foodora
+          </label>
+          <label>
+            <input type="checkbox" value="postmates"> Postmates
+          </label>
+          <label>
+            <input type="checkbox" value="grubhub"> Grubhub
+          </label>
+          </div>
+
+          <div class="form-shaping">
+          <p>Any comments or suggestion about food delivery ?</p>
+          <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+          </div>
+
+          <div class="form-shaping">
+          <button type="submit" id="submit">Submit</button>
+          </div>
+
+        </form>
+    </main>
+</body>
+</html>
